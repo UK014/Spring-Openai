@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1")
 public class Controller {
 
-    OpenAiChatClient chatClient = new OpenAiChatClient(new OpenAiApi("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"));
+    OpenAiChatClient chatClient = new OpenAiChatClient(new OpenAiApi("key here"));
 
     @GetMapping("/ai/message")
     public String getMessage(@RequestParam(value = "prompt") String prompt) {
